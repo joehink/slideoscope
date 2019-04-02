@@ -1,8 +1,77 @@
+.slideoscope .screen-container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    height: 225px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.25);
+    overflow: hidden;
+}
+
+.slideoscope .screen-container .screen {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.slideoscope .screen-container .screen.slide-left {
+    animation: slide-left .5s;
+}
+
+.slideoscope .screen-container .screen.slide-right {
+    animation: slide-right .5s;
+}
+
+.slideoscope .screen-container .back, .slideoscope .screen-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,.5);
+    padding: 10% 3%;
+    font-size: 150%;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.slideoscope .screen-container .back:hover, .slideoscope .screen-container .next:hover {
+    opacity: .75;
+}
+
+.slideoscope .screen-container .back {
+    left: 0;
+}
+
+.slideoscope .screen-container .next {
+    right: 0;
+}
+
 .slideoscope .queue {
     display: flex;
     box-shadow: 0 0 15px rgba(0,0,0, 0.25);
+    width: 400px;
+    margin-top: 20px;
+    overflow-x: auto;
+    background: white;
 }
+
 .slideoscope .queue .slide {
-    height: 56px;
-    width: 100px;
+    min-height: 56px;
+    min-width: 100px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.slideoscope .queue .slide.current {
+    opacity: 1;
+}
+
+
+@keyframes slide-left {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-100%)}
+}
+
+@keyframes slide-right {
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(0)}
 }
