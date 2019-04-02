@@ -1,27 +1,31 @@
-.slideoscope .screen-container {
+.slideoscope {
+    width: 400px;
+}
+
+.slideoscope-screen-container {
     position: relative;
     display: flex;
     align-items: flex-start;
     height: 225px;
-    width: 400px;
+    width: 100%;
     box-shadow: 0 0 15px rgba(0,0,0, 0.25);
     overflow: hidden;
 }
 
-.slideoscope .screen-container .screen {
+.slideoscope-screen {
     min-width: 100%;
     min-height: 100%;
 }
 
-.slideoscope .screen-container .screen.slide-left {
+.slideoscope-screen.slide-left {
     animation: slide-left .5s;
 }
 
-.slideoscope .screen-container .screen.slide-right {
+.slideoscope-screen.slide-right {
     animation: slide-right .5s;
 }
 
-.slideoscope .screen-container .back, .slideoscope .screen-container .next {
+.slideoscope-back, .slideoscope-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -33,35 +37,35 @@
     z-index: 1000;
 }
 
-.slideoscope .screen-container .back:hover, .slideoscope .screen-container .next:hover {
+.slideoscope-back:hover, .slideoscope-next:hover {
     opacity: .75;
 }
 
-.slideoscope .screen-container .back {
+.slideoscope-back {
     left: 0;
 }
 
-.slideoscope .screen-container .next {
+.slideoscope-next {
     right: 0;
 }
 
-.slideoscope .queue {
+.slideoscope-queue {
     display: flex;
     box-shadow: 0 0 15px rgba(0,0,0, 0.25);
-    width: 400px;
+    width: 100%;
     margin-top: 20px;
     overflow-x: auto;
     background: white;
 }
 
-.slideoscope .queue .slide {
+.slideoscope-slide {
     min-height: 56px;
     min-width: 100px;
     cursor: pointer;
     opacity: .5;
 }
 
-.slideoscope .queue .slide.current {
+.slideoscope-slide.current {
     opacity: 1;
 }
 
