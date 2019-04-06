@@ -6,10 +6,10 @@ Slideoscope is a lightweight slideshow plugin built with vanilla JavaScript and 
 Include these two tags in the head of your HTML page.
 ```
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slideoscope@1.0.1/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slideoscope@1.0.2/main.css">
 
     <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/slideoscope@1.0.1/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slideoscope@1.0.2/app.js"></script>
 ```
 
 ### Boilerplate
