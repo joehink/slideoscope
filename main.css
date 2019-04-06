@@ -35,6 +35,7 @@
     color: white;
     cursor: pointer;
     z-index: 1000;
+    border: none;
 }
 
 .slideoscope-back:hover, .slideoscope-next:hover {

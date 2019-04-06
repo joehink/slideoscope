@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Slideoscope Demo</title>
+    <title>Slideoscope</title>
 
-    <link rel="stylesheet" href="./main.css">
-    <script src="./app.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slideoscope@1.0.0/main.css">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/slideoscope@1.0.0/app.js"></script>
 </head>
 <body>
-    <h1>Slideoscope</h1>
+    <!-- Slideoscope container -->
     <div class="slideoscope">
         <div class="slideoscope-screen-container">
+            <!-- Screen (big image) -->
             <div class="slideoscope-screen"></div>
-            <span class="slideoscope-back"><</span>
-            <span class="slideoscope-next">></span>
+            <!-- Back and next buttons -->
+            <button class="slideoscope-back"><</button>
+            <button class="slideoscope-next">></button>
         </div>
+        <!-- Queue of slides -->
         <div class="slideoscope-queue">
-            <div class="slideoscope-slide" data-src="./images/1.jpg"></div>
-            <div class="slideoscope-slide" data-src="./images/2.jpg"></div>
-            <div class="slideoscope-slide" data-src="https://static.spin.com/files/2016/10/BrianWilsonGetty-1476984296-1387x1000.jpg"></div>
-            <div class="slideoscope-slide" data-src="./images/3.jpg"></div>
-            <div class="slideoscope-slide" data-src="./images/4.jpg"></div>
-            <div class="slideoscope-slide" data-src="https://i.scdn.co/image/a832eaa4d4ff006a419610c2c5d37140efa00225"></div>
+            <!-- Slides -->
+            <div class="slideoscope-slide" data-src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+            <div class="slideoscope-slide" data-src="https://images.pexels.com/photos/291732/pexels-photo-291732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+            <div class="slideoscope-slide" data-src="https://images.pexels.com/photos/355241/pexels-photo-355241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+            <div class="slideoscope-slide" data-src="https://images.pexels.com/photos/913215/pexels-photo-913215.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+            <div class="slideoscope-slide" data-src="https://images.pexels.com/photos/1670187/pexels-photo-1670187.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+            <div class="slideoscope-slide" data-src="https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
         </div>
     </div>
 </body>
