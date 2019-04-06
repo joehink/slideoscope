@@ -1,6 +1,6 @@
 {
   "name": "slideoscope",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A slideshow JavaScript plugin",
   "main": "app.js",
   "scripts": {
