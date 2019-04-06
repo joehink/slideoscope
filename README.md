@@ -1,6 +1,6 @@
 # Slideoscope
 
-Slideoscope is a lightweight and minimalist slideshow plugin built with vanilla JavaScript and CSS.
+Slideoscope is a lightweight slideshow plugin built with vanilla JavaScript and CSS.
 
 ### CDN
 Include these two tags in the head of your HTML page.
@@ -57,6 +57,8 @@ For slides shown on the screen (big image), images are displayed with ```backgro
 
 ### Change the size of the screen (big image)
 
+#### Width
+
 The screen's width is ```100%``` of the slideoscope's width. By default, the width of a slideoscope is ```400px```. If you would like to change the width of the screen, select the ```.slideoscope``` class and change the ```width``` property to a value of your choosing. Just make sure that your custom CSS is applied after the default Slideoscope CSS from the CDN.
 
 ```
@@ -71,6 +73,8 @@ Or you may apply an inline style to the specific slideoscope that you would like
 
 <img src="images/screenshots/wideScreen.png" width="600" />
 
+#### Height
+
 As you can see, the slideoscope is wider and the screen is wider but the screen is not taller and therefore the image appears to be the same size as before. The height of the screen is ```100%``` of the ```slideoscope-screen-container``` div. By default, the ```slideoscope-screen-container``` height is ```225px```. To change the height of the screen, select the ```.slideoscope-screen-container``` class and change the ```height``` property to a value of your choosing. Again, make sure that your custom CSS is applied after the default Slideoscope CSS from the CDN.
 
 ```
@@ -84,6 +88,38 @@ Or you may apply an inline style to the specific slideoscope that you would like
 ```<div style="height: 600px;" class="slideoscope-screen-container">```
 
 <img src="images/screenshots/bigScreen.png" width="600" />
+
+### Change the size of slides in the queue
+
+#### Width
+
+By default, a slide in the queue has a ```min-width``` of ```100px```. If you would like to change the width of the slide, select the ```.slideoscope-slide``` class and change the ```min-width``` property to a value of your choosing. Just make sure that your custom CSS is applied after the default Slideoscope CSS from the CDN.
+
+```
+.slideoscope-slide {
+    min-width: 200px;
+}
+```
+
+Or you may apply an inline style to the specific slide that you would like to change.
+
+```
+<div style="min-width: 200px" class="slideoscope-slide" data-src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+```
+
+<img src="images/screenshots/wideSlide.png" width="600" />
+
+#### Height
+
+By default, a slide in the queue has a ```min-height``` of ```56px```. If you would like to change the height of the slide, select the ```.slideoscope-slide``` class and change the ```min-height``` property to a value of your choosing. Just make sure that your custom CSS is applied after the default Slideoscope CSS from the CDN.
+
+```
+.slideoscope-slide {
+    min-height: 100px;
+}
+```
+
+<img src="images/screenshots/slideHeight.png" width="600" />
 
 ## Authors
 
