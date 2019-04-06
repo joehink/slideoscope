@@ -1,0 +1,19 @@
+{
+  "name": "slideoscope",
+  "version": "1.0.0",
+  "description": "A slideshow JavaScript plugin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joehink/slideoscope.git"
+  },
+  "author": "Joe Hinkley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joehink/slideoscope/issues"
+  },
+  "homepage": "https://github.com/joehink/slideoscope#readme"
+}
