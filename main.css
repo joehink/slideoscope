@@ -36,6 +36,7 @@
     cursor: pointer;
     z-index: 1000;
     border: none;
+    outline: none;
 }
 
 .slideoscope-back:hover, .slideoscope-next:hover {
